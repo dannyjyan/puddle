@@ -21,7 +21,11 @@
 
         {{ form.non_field_errors}}
     {% endif %}
-
+    
+    {% if title == 'Edit item' %}
+    <button class="mt-6 py-4 px-8 text-lg bg-teal-500 hover:bg-teal-700 rounded-xl text-white">Save</button>
+    {% else %}
     <button class="mt-6 py-4 px-8 text-lg bg-teal-500 hover:bg-teal-700 rounded-xl text-white">Submit</button>
+    {% endif %}
 </form>
 {% endblock%}
